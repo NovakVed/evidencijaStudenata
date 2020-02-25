@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EvidencijaStudenataModelStoreContainer" CdmEntityContainer="EvidencijaStudenataEntities">
+    <EntitySetMapping Name="Student">
+      <EntityTypeMapping TypeName="EvidencijaStudenataModel.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ime" ColumnName="Ime" />
+          <ScalarProperty Name="Prezime" ColumnName="Prezime" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="OdabraniModel" ColumnName="OdabraniModel" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Napomena" ColumnName="Napomena" />
+          <ScalarProperty Name="TimId" ColumnName="TimId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tim">
+      <EntityTypeMapping TypeName="EvidencijaStudenataModel.Tim">
+        <MappingFragment StoreEntitySet="Tim">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OznakaTima" ColumnName="OznakaTima" />
+          <ScalarProperty Name="NazivProjekta" ColumnName="NazivProjekta" />
+          <ScalarProperty Name="OpisProjekta" ColumnName="OpisProjekta" />
+          <ScalarProperty Name="Napomena" ColumnName="Napomena" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
